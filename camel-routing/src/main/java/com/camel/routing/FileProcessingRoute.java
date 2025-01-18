@@ -1,7 +1,7 @@
 package com.camel.routing;
 
 import com.camel.fileProcessor.database.DatabaseHandler;
-import com.camel.fileProcessor.exception.GlobalException;
+import com.camel.fileProcessor.exception.GlobalExceptionHandler;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.CsvDataFormat;
@@ -19,48 +19,55 @@ public class FileProcessingRoute extends RouteBuilder {
     @Value("${csv.processed.directory}")
     private String processedDirectory;
 
-    private final DatabaseHandler databaseHandler;
+    @Value("${csv.error.directory}")
+    private String errorDirectory;
 
-    public FileProcessingRoute(DatabaseHandler databaseHandler) {
+    private final DatabaseHandler databaseHandler;
+    private final GlobalExceptionHandler globalExceptionHandler;
+
+    public FileProcessingRoute(DatabaseHandler databaseHandler, GlobalExceptionHandler globalExceptionHandler) {
         this.databaseHandler = databaseHandler;
+        this.globalExceptionHandler = globalExceptionHandler;
     }
 
     @Override
     public void configure() throws Exception {
         onException(Exception.class)
                 .handled(true)
-                .process(exchange -> {
-                    Exception exception = exchange.getProperty(Exchange.EXCEPTION_CAUGHT, Exception.class);
-                    log.error("Error occurred during file processing", exception);
-                    throw new GlobalException("Error processing file", exception);
-                });
+                .process(globalExceptionHandler)
+                .to("file:" + errorDirectory + "?fileName=${header:CamelFileName}")
+                .log("File move to error directory due to processing exception: ${header.CamelFileName}");
 
         from("file:" + inputDirectory + "?include=.*.csv&initialDelay=1000&delay=5000&delete=false")
                 .routeId("FileProcessingRoute")
+                .convertBodyTo(String.class)
                 .unmarshal(configureFileFormat())
                 .split(body())
-                .process(exchange -> {
-                    List<List<String>> rows = exchange.getIn().getBody(List.class);
+                .log("Reading file: ${header.CamelFileName}")
+                .doTry()
+                        .process(this::processFile)
+                        .to("direct:DatabaseHandler")
+                    .log("Successfully processed file: ${header.CamelFileName}")
+                .doCatch(Exception.class)
+                    .process(globalExceptionHandler)
+                    .to("file:" + errorDirectory + "?fileName=${header.CamelFileName}")
+                .doFinally()
+                    .log("Finished processing file: ${header.CamelFileName}")
+                .end();
+    }
 
-                    String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
-                    String fileContent = exchange.getIn().getBody(String.class);
-                    log.info("Processing file: " + fileName);
-                    log.info("Processing file content: " + fileContent);
 
-                    if (rows == null || rows.isEmpty()) {
-                        throw new GlobalException("The file is empty");
-                    }
-                    if (rows.size() == 1){
-                        throw new GlobalException("The file is contains only headers");
-                    }
-                    exchange.getIn().setBody(fileContent);
-                    exchange.getIn().setHeader("CamelFileName", fileName);
-//                    databaseHandler.persistData(fileName, fileContent);
-                    log.info("Data persisted successfully");
-                })
-                .to("direct:DatabaseHandler")
-//                .to("file:" + processedDirectory + "?fileName=${header.CamelFileName}")
-                .log("File processing completed");
+    private void processFile(Exchange exchange) throws Exception {
+        List<List<String>> rows = exchange.getIn().getBody(List.class);
+        String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
+
+        log.info("Validating file: {}", fileName);
+
+        if (rows == null || rows.isEmpty()) {
+            throw new IllegalArgumentException("This is empty: " + fileName);
+        }
+
+        exchange.getIn().setBody(rows);
     }
 
     private CsvDataFormat configureFileFormat(){

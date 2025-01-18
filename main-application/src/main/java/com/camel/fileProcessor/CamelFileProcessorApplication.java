@@ -12,7 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"com.camel.routing"
         , "com.camel.fileProcessor.database"
         , "com.camel.fileProcessor.exception"
-        , "com.camel.fileProcessor.logging"})
+        , "com.camel.fileProcessor.logging"
+        , "com.camel"})
 public class CamelFileProcessorApplication {
 
     public static void main(String[] args) {
