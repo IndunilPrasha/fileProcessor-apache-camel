@@ -17,11 +17,13 @@ spring:
     hibernate:
       ddl-auto: update
 
-  kafka:
-    bootstrap-servers: localhost:9092
-    consumer:
-      group-id: kafka-practice-group
-      auto-offset-reset: earliest
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    consumer:
+#      group-id: kafka-data-group
+#      auto-offset-reset: earliest
+#    template:
+#      default-topic: kafka-data-topic
 
 
 csv:
@@ -63,3 +65,12 @@ camel:
    csv:
     skip-header-record: true
     use-maps: true
+
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  topic: kafka_data_topic
+  group-id: kafka-consumer-group
+  auto:
+    offset:
+      reset: earliest
