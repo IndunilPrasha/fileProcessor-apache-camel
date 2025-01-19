@@ -1,5 +1,6 @@
 package com.camel.fileProcessor.config;
 
+import com.camel.fileProcessor.exception.GlobalExceptionHandler;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,5 +32,10 @@ public class DatabaseConfig {
         initializer.setDataSource(dataSource);
         initializer.setDatabasePopulator(populator);
         return initializer;
+    }
+
+    @Bean
+    public GlobalExceptionHandler globalExceptionHandler() {
+        return new GlobalExceptionHandler();
     }
 }
