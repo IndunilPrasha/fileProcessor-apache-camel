@@ -6,6 +6,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class DatabaseHandler extends RouteBuilder{
 
@@ -39,7 +41,7 @@ public class DatabaseHandler extends RouteBuilder{
                 .end();
     }
 
-    private void validateInput(Exchange exchange) throws IllegalArgumentException {
+    public void validateInput(Exchange exchange) throws IllegalArgumentException {
         String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
         String data = exchange.getIn().getBody(String.class);
 
@@ -55,11 +57,20 @@ public class DatabaseHandler extends RouteBuilder{
     }
     private void persistDataToDatabase(Exchange exchange) {
 
+        List<List<String>> batch = exchange.getIn().getBody(List.class);
+
         String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
-        String data = exchange.getIn().getBody(String.class);
+//        String data = exchange.getIn().getBody(String.class);
 
         String sql = "INSERT INTO CSV_DATE (FILE_NAME, RECORD_DATA, PROCESSED_DATE) VALUES (?, ?, CURRENT_TIMESTAMP)";
-        jdbcTemplate.update(sql, fileName, data);
+        for (List<String> row : batch) {
+            try {
+                String recordData = String.join(",", row);
+                jdbcTemplate.update(sql, fileName, recordData);
+            } catch (Exception e) {
+                log.error("Error persisting row: {} - {}", row, e.getMessage());
+            }
+        }
 
         log.info("Data successfully persisted for file: " + fileName);
     }

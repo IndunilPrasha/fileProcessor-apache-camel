@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 
 @Component
 public class FileProcessingRoute extends RouteBuilder {
@@ -21,6 +22,12 @@ public class FileProcessingRoute extends RouteBuilder {
 
     @Value("${csv.error.directory}")
     private String errorDirectory;
+
+    @Value("${batch.size}")
+    private int batchSize;
+
+    @Value("${parallel.threads}")
+    private int parallelThreads;
 
     private final DatabaseHandler databaseHandler;
     private final GlobalExceptionHandler globalExceptionHandler;
@@ -43,6 +50,12 @@ public class FileProcessingRoute extends RouteBuilder {
                 .convertBodyTo(String.class)
                 .unmarshal(configureFileFormat())
                 .split(body())
+                    .streaming()
+                    .parallelProcessing()
+                    .executorService(customThreadPool())
+                    .aggregate(constant(true), new BatchAggregationStrategy())
+                        .completionSize(batchSize)
+                        .completionTimeout(5000)
                 .log("Reading file: ${header.CamelFileName}")
                 .doTry()
                         .process(this::processFile)
@@ -57,17 +70,17 @@ public class FileProcessingRoute extends RouteBuilder {
     }
 
 
-    private void processFile(Exchange exchange) throws Exception {
-        List<List<String>> rows = exchange.getIn().getBody(List.class);
+    public void processFile(Exchange exchange) throws Exception {
+        List<List<String>> batch = exchange.getIn().getBody(List.class);
         String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
 
         log.info("Validating file: {}", fileName);
 
-        if (rows == null || rows.isEmpty()) {
+        if (batch == null || batch.isEmpty()) {
             throw new IllegalArgumentException("This is empty: " + fileName);
         }
 
-        exchange.getIn().setBody(rows);
+        exchange.getIn().setBody(batch);
     }
 
     private CsvDataFormat configureFileFormat(){
@@ -75,5 +88,15 @@ public class FileProcessingRoute extends RouteBuilder {
         csvDataFormat.setSkipHeaderRecord("true");
         return csvDataFormat;
 
+    }
+
+//    private ExecutorService customThreadPool() {
+//        return getContext().getExecutorServiceManager().newThreadPool(this, "CustomThreadPool", parallelThreads, parallelThreads * 2);
+//    }
+
+    private java.util.concurrent.ExecutorService customThreadPool() {
+        return getContext().getExecutorServiceManager().newThreadPool(
+                this, "CustomThreadPoolProfile",
+                parallelThreads,parallelThreads * 2);
     }
 }
