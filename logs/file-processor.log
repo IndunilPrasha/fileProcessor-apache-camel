@@ -3087,3 +3087,294 @@ java.lang.ClassCastException: class java.lang.String cannot be cast to class jav
 2025-01-23 09:19:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-23 09:19:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-23 09:19:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-23 09:47:14 [main] INFO  c.c.f.CamelFileProcessorApplication - Starting CamelFileProcessorApplication using Java 17.0.8 with PID 39428 (D:\BJB\ROC_BJB\fileProcessor\main-application\target\classes started by Dell in D:\BJB\ROC_BJB\fileProcessor)
+2025-01-23 09:47:14 [main] DEBUG c.c.f.CamelFileProcessorApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-23 09:47:14 [main] INFO  c.c.f.CamelFileProcessorApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-23 09:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-23 09:47:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-23 09:47:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-23 09:47:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-01-23 09:47:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-23 09:47:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1895 ms
+2025-01-23 09:47:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-23 09:47:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:csvfiledb user=SA
+2025-01-23 09:47:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-23 09:47:16 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:csvfiledb'
+2025-01-23 09:47:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-23 09:47:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-23 09:47:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-23 09:47:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-23 09:47:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-23 09:47:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-23 09:47:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:47:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-23 09:47:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-01-23 09:47:19 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:47:19 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:47:19 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:47:19 [CamelMainRunController] INFO  org.apache.camel.main.MainSupport - Apache Camel (Main) 4.3.0 is starting
+2025-01-23 09:47:19 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:4)
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://D:%5C%5CBJB%5C%5CROC_BJB%5C%5CfileProcessor%5C%5Cdata%5C%5Cinput)
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started DatabaseHandlerRoute (direct://DatabaseHandler)
+2025-01-23 09:47:19 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 27ms (build:0ms init:0ms start:27ms)
+2025-01-23 09:47:19 [main] INFO  c.c.f.CamelFileProcessorApplication - Started CamelFileProcessorApplication in 5.328 seconds (process running for 6.108)
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737596839204
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-1-4cb482c0-c03c-4b52-bb20-de2fa60d4c36
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:47:19 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=29, memberId='consumer-kafka-consumer-group-1-4cb482c0-c03c-4b52-bb20-de2fa60d4c36', protocol='range'}
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Finished assignment for group at generation 29: {consumer-kafka-consumer-group-1-4cb482c0-c03c-4b52-bb20-de2fa60d4c36=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=29, memberId='consumer-kafka-consumer-group-1-4cb482c0-c03c-4b52-bb20-de2fa60d4c36', protocol='range'}
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:47:22 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  KafkaConsumerRoute - Received message from kafka: kafka testing5
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  c.c.f.database.DatabaseHandler - Input validated for file: kafka-message
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: kafka-message
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  DatabaseHandlerRoute - Data successfully persisted for file: kafka-message
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: kafka-message
+2025-01-23 09:47:32 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  ProcessKafkaMessageRoute - Kafka message persisted to database: kafka testing5
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate1.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate3.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate2.csv
+2025-01-23 09:48:30 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate2.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Reading file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  c.camel.routing.FileProcessingRoute - Validating file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Input validated for file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  c.c.f.database.DatabaseHandler - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - Data successfully persisted for file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  DatabaseHandlerRoute - DatabaseHandler processing completed for file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Successfully processed file: email_duplicate1.csv
+2025-01-23 09:48:35 [Camel (camel-1) thread #14 - Aggregator] INFO  FileProcessingRoute - Finished processing file: email_duplicate1.csv
+2025-01-23 09:50:24 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:45s)
+2025-01-23 09:50:24 [Camel (camel-1) thread #15 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-1
+2025-01-23 09:50:24 [Camel (camel-1) thread #15 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:50:24 [Camel (camel-1) thread #15 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:50:24 [Camel (camel-1) thread #15 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-1-4cb482c0-c03c-4b52-bb20-de2fa60d4c36 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:50:27 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:50:28 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:50:28 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:50:28 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:50:28 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-1 unregistered
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:4)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped DatabaseHandlerRoute (direct://DatabaseHandler)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://D:%5C%5CBJB%5C%5CROC_BJB%5C%5CfileProcessor%5C%5Cdata%5C%5Cinput)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 3s761ms (uptime:3m9s)
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-23 09:50:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

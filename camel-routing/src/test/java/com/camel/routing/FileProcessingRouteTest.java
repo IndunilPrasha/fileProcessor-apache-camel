@@ -5,6 +5,7 @@ import com.camel.fileProcessor.database.DatabaseHandler;
 import com.camel.fileProcessor.exception.GlobalExceptionHandler;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
+import org.apache.camel.Message;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.builder.NotifyBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
@@ -18,8 +19,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.DynamicPropertySource;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 @CamelSpringBootTest
@@ -149,6 +153,28 @@ public class FileProcessingRouteTest {
         // Verify the mock endpoint received the message
         mockDatabaseEndpoint.assertIsSatisfied();
     }
+
+    // Process Exchange with null batch list
+//    @Test
+//    public void test_process_exchange_with_null_batch() {
+//        // Arrange
+//        FileProcessingRoute route = new FileProcessingRoute();
+//        Exchange exchange = mock(Exchange.class);
+//        Message message = mock(Message.class);
+//        when(exchange.getIn()).thenReturn(message);
+//        when(message.getBody(List.class)).thenReturn(null);
+//        when(message.getHeader("CamelFileName", String.class)).thenReturn("test.csv");
+//
+//        // Act & Assert
+//        IllegalArgumentException exception = assertThrows(
+//                IllegalArgumentException.class,
+//                () -> route.processFile(exchange)
+//        );
+//
+//        assertEquals("This is empty: test.csv", exception.getMessage());
+//        verify(message).getBody(List.class);
+//        verify(message).getHeader("CamelFileName", String.class);
+//    }
 
     protected RoutesBuilder createRouteBuilder() throws Exception {
         return new FileProcessingRoute(databaseHandler, globalExceptionHandler);

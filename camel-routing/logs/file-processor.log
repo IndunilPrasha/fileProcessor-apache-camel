@@ -7045,3 +7045,1853 @@
 2025-01-23 00:59:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-23 00:59:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-23 00:59:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-23 09:28:16 [main] INFO  c.c.routing.FileProcessingRouteTest - Starting FileProcessingRouteTest using Java 17.0.8 with PID 41688 (started by Dell in D:\BJB\ROC_BJB\fileProcessor\camel-routing)
+2025-01-23 09:28:16 [main] DEBUG c.c.routing.FileProcessingRouteTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-23 09:28:16 [main] INFO  c.c.routing.FileProcessingRouteTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-23 09:28:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-23 09:28:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-23 09:28:21 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:csvfiledb user=SA
+2025-01-23 09:28:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-23 09:28:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-23 09:28:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-23 09:28:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-23 09:28:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-23 09:28:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-23 09:28:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-23 09:28:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:28:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-23 09:28:25 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:csvfiledb'
+2025-01-23 09:28:25 [main] INFO  c.c.routing.FileProcessingRouteTest - Started FileProcessingRouteTest in 10.65 seconds (process running for 12.648)
+2025-01-23 09:28:25 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:28:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess
+2025-01-23 09:28:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:28:26 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:28:26 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:28:26 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:28:26 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:28:26 [CamelMainRunController] INFO  org.apache.camel.main.MainSupport - Apache Camel (Main) 4.3.0 is starting
+2025-01-23 09:28:26 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:28:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 69ms (build:0ms init:0ms start:69ms)
+2025-01-23 09:28:26 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:28:26 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595707175
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:28:27 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-1-97b4c2c9-266b-4b28-90cb-3e1c827da439
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:28:28 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=9, memberId='consumer-kafka-consumer-group-1-97b4c2c9-266b-4b28-90cb-3e1c827da439', protocol='range'}
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Finished assignment for group at generation 9: {consumer-kafka-consumer-group-1-97b4c2c9-266b-4b28-90cb-3e1c827da439=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=9, memberId='consumer-kafka-consumer-group-1-97b4c2c9-266b-4b28-90cb-3e1c827da439', protocol='range'}
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:28:31 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:28:57 [main] ERROR o.a.c.p.e.DefaultErrorHandler - Failed delivery for (MessageId: 1800ED1D08EFD48-0000000000000000 on ExchangeId: 1800ED1D08EFD48-0000000000000000). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://DatabaseHandler. Exchange[]
+
+Message History (source location and message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+Source                                   ID                             Processor                                          Elapsed (ms)
+                                         ProcessKafkaMessageRoute/Proce from[direct://ProcessKafkaMessage]                        30044
+	...
+                                         ProcessKafkaMessageRoute/to5   direct:DatabaseHandler                                        0
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://DatabaseHandler. Exchange[]
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:82)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.handleFirst(RedeliveryErrorHandler.java:462)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:438)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.doRun(DefaultReactiveExecutor.java:199)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.executeReactiveWork(DefaultReactiveExecutor.java:189)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.tryExecuteReactiveWork(DefaultReactiveExecutor.java:166)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:59)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:163)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.processNonTransacted(CamelInternalProcessor.java:354)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:330)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:96)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.processNonTransacted(SharedCamelInternalProcessor.java:199)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:173)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor$1.process(SharedCamelInternalProcessor.java:109)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:81)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:106)
+	at org.apache.camel.support.cache.DefaultProducerCache.send(DefaultProducerCache.java:178)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:176)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:172)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:153)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.sendBodyAndHeader(DefaultProducerTemplate.java:219)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.sendBodyAndHeader(DefaultProducerTemplate.java:213)
+	at com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess(FileProcessingRouteTest.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-01-23 09:28:57 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:28:57 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-1
+2025-01-23 09:28:57 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:28:57 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:28:57 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-1-97b4c2c9-266b-4b28-90cb-3e1c827da439 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:29:02 [Camel (camel-1) thread #2 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-1 unregistered
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 4s615ms (uptime:35s)
+2025-01-23 09:29:02 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:02 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testKafkaMessageProcessingRouteSuccess (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:29:02 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 35s799ms (35799 millis)
+2025-01-23 09:29:02 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testCustomThreadPoolConfiguration
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:29:02 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:29:02 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:29:02 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:29:02 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:29:02 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:29:02 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 6ms (build:0ms init:0ms start:6ms)
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595742613
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-2-74fde0ae-570a-41f8-add3-39a16554003f
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:29:02 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:02 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:29:02 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-2
+2025-01-23 09:29:02 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:29:02 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:29:02 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=11, memberId='consumer-kafka-consumer-group-2-74fde0ae-570a-41f8-add3-39a16554003f', protocol='range'}
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Finished assignment for group at generation 11: {consumer-kafka-consumer-group-2-74fde0ae-570a-41f8-add3-39a16554003f=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=11, memberId='consumer-kafka-consumer-group-2-74fde0ae-570a-41f8-add3-39a16554003f', protocol='range'}
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:29:05 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-2-74fde0ae-570a-41f8-add3-39a16554003f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:29:07 [Camel (camel-1) thread #6 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-2 unregistered
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s32ms (uptime:5s)
+2025-01-23 09:29:07 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:07 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testCustomThreadPoolConfiguration (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:29:07 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s66ms (5066 millis)
+2025-01-23 09:29:07 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testCustomThreadPoolConfiguration
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteErrorHandling
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:29:07 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:29:07 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:29:07 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:29:07 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:29:07 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:29:07 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 4ms (build:0ms init:0ms start:4ms)
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595747719
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-3-07413a66-b75e-4450-846e-942aec623e69
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:29:07 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:07 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:29:07 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-3
+2025-01-23 09:29:07 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:29:07 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:29:07 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=13, memberId='consumer-kafka-consumer-group-3-07413a66-b75e-4450-846e-942aec623e69', protocol='range'}
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Finished assignment for group at generation 13: {consumer-kafka-consumer-group-3-07413a66-b75e-4450-846e-942aec623e69=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=13, memberId='consumer-kafka-consumer-group-3-07413a66-b75e-4450-846e-942aec623e69', protocol='range'}
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:29:10 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-3-07413a66-b75e-4450-846e-942aec623e69 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:29:12 [Camel (camel-1) thread #10 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-3 unregistered
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s40ms (uptime:5s)
+2025-01-23 09:29:12 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:12 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testFileProcessingRouteErrorHandling (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:29:12 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s64ms (5064 millis)
+2025-01-23 09:29:12 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteErrorHandling
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testEmptyFileValidation
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:29:12 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:29:12 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:29:12 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:29:12 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:29:12 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:29:12 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 2ms (build:0ms init:0ms start:2ms)
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595752812
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:29:12 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:29:12 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-4
+2025-01-23 09:29:12 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:29:12 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:29:12 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-4-28fa9836-996a-4d79-a756-77c200b2b2a0
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:29:12 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=15, memberId='consumer-kafka-consumer-group-4-28fa9836-996a-4d79-a756-77c200b2b2a0', protocol='range'}
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Finished assignment for group at generation 15: {consumer-kafka-consumer-group-4-28fa9836-996a-4d79-a756-77c200b2b2a0=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=15, memberId='consumer-kafka-consumer-group-4-28fa9836-996a-4d79-a756-77c200b2b2a0', protocol='range'}
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:29:15 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-4-28fa9836-996a-4d79-a756-77c200b2b2a0 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:29:17 [Camel (camel-1) thread #13 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-4 unregistered
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s56ms (uptime:5s)
+2025-01-23 09:29:17 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:17 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testEmptyFileValidation (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:29:17 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s70ms (5070 millis)
+2025-01-23 09:29:17 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testEmptyFileValidation
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteSuccess
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:29:17 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:29:17 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:29:17 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:29:17 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:29:17 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:29:17 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 2ms (build:0ms init:0ms start:2ms)
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595757912
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:29:17 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:29:17 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-5
+2025-01-23 09:29:17 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:29:17 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:17 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-5-bd0824ce-4847-4291-879a-3c73d6218c75
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:29:17 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=17, memberId='consumer-kafka-consumer-group-5-bd0824ce-4847-4291-879a-3c73d6218c75', protocol='range'}
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Finished assignment for group at generation 17: {consumer-kafka-consumer-group-5-bd0824ce-4847-4291-879a-3c73d6218c75=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=17, memberId='consumer-kafka-consumer-group-5-bd0824ce-4847-4291-879a-3c73d6218c75', protocol='range'}
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:29:20 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-5-bd0824ce-4847-4291-879a-3c73d6218c75 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:29:22 [Camel (camel-1) thread #16 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-5 unregistered
+2025-01-23 09:29:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:29:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:29:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:29:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:29:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s59ms (uptime:5s)
+2025-01-23 09:29:22 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:22 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testFileProcessingRouteSuccess (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:29:22 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s74ms (5074 millis)
+2025-01-23 09:29:22 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:29:22 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteSuccess
+2025-01-23 09:29:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:29:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-23 09:29:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-23 09:30:43 [main] INFO  c.c.routing.FileProcessingRouteTest - Starting FileProcessingRouteTest using Java 17.0.8 with PID 26280 (started by Dell in D:\BJB\ROC_BJB\fileProcessor\camel-routing)
+2025-01-23 09:30:43 [main] DEBUG c.c.routing.FileProcessingRouteTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-01-23 09:30:43 [main] INFO  c.c.routing.FileProcessingRouteTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-23 09:30:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-23 09:30:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-23 09:30:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:csvfiledb user=SA
+2025-01-23 09:30:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-23 09:30:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-23 09:30:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-01-23 09:30:47 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-23 09:30:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-23 09:30:48 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-23 09:30:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-23 09:30:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:30:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-23 09:30:50 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:csvfiledb'
+2025-01-23 09:30:50 [main] INFO  c.c.routing.FileProcessingRouteTest - Started FileProcessingRouteTest in 7.466 seconds (process running for 9.167)
+2025-01-23 09:30:50 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:30:50 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess
+2025-01-23 09:30:50 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:30:50 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:30:50 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:30:50 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:30:50 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:30:50 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:30:50 [CamelMainRunController] INFO  org.apache.camel.main.MainSupport - Apache Camel (Main) 4.3.0 is starting
+2025-01-23 09:30:50 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:30:51 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:30:51 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:30:51 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:30:51 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:30:51 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 36ms (build:0ms init:0ms start:36ms)
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595851285
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:30:51 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-1-00ae46dc-662b-4638-98dd-2d58b615c455
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:30:52 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=19, memberId='consumer-kafka-consumer-group-1-00ae46dc-662b-4638-98dd-2d58b615c455', protocol='range'}
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Finished assignment for group at generation 19: {consumer-kafka-consumer-group-1-00ae46dc-662b-4638-98dd-2d58b615c455=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=19, memberId='consumer-kafka-consumer-group-1-00ae46dc-662b-4638-98dd-2d58b615c455', protocol='range'}
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:30:55 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:31:22 [main] ERROR o.a.c.p.e.DefaultErrorHandler - Failed delivery for (MessageId: 83D9EA0C38490BB-0000000000000000 on ExchangeId: 83D9EA0C38490BB-0000000000000000). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://DatabaseHandler. Exchange[]
+
+Message History (source location and message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+Source                                   ID                             Processor                                          Elapsed (ms)
+                                         ProcessKafkaMessageRoute/Proce from[direct://ProcessKafkaMessage]                        30041
+	...
+                                         ProcessKafkaMessageRoute/to5   direct:DatabaseHandler                                        0
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://DatabaseHandler. Exchange[]
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:82)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.handleFirst(RedeliveryErrorHandler.java:462)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:438)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.doRun(DefaultReactiveExecutor.java:199)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.executeReactiveWork(DefaultReactiveExecutor.java:189)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.tryExecuteReactiveWork(DefaultReactiveExecutor.java:166)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:59)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:163)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.processNonTransacted(CamelInternalProcessor.java:354)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:330)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:96)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.processNonTransacted(SharedCamelInternalProcessor.java:199)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:173)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor$1.process(SharedCamelInternalProcessor.java:109)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:81)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:106)
+	at org.apache.camel.support.cache.DefaultProducerCache.send(DefaultProducerCache.java:178)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:176)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:172)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:153)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.sendBodyAndHeader(DefaultProducerTemplate.java:219)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.sendBodyAndHeader(DefaultProducerTemplate.java:213)
+	at com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess(FileProcessingRouteTest.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-01-23 09:31:22 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:31:22 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-1
+2025-01-23 09:31:22 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:31:22 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:31:22 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-1-00ae46dc-662b-4638-98dd-2d58b615c455 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-1, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:31:26 [Camel (camel-1) thread #3 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-1 unregistered
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 4s462ms (uptime:35s)
+2025-01-23 09:31:26 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:26 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testKafkaMessageProcessingRouteSuccess (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:31:26 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 35s619ms (35619 millis)
+2025-01-23 09:31:26 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testKafkaMessageProcessingRouteSuccess
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testCustomThreadPoolConfiguration
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:31:26 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:31:26 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:31:26 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:31:26 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:31:26 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:31:26 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 4ms (build:0ms init:0ms start:4ms)
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595886693
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-2-8736c5a1-b80b-488f-a5b5-89ffb31ebbb3
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:31:26 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:26 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:31:26 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-2
+2025-01-23 09:31:26 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:31:26 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:31:26 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=21, memberId='consumer-kafka-consumer-group-2-8736c5a1-b80b-488f-a5b5-89ffb31ebbb3', protocol='range'}
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Finished assignment for group at generation 21: {consumer-kafka-consumer-group-2-8736c5a1-b80b-488f-a5b5-89ffb31ebbb3=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=21, memberId='consumer-kafka-consumer-group-2-8736c5a1-b80b-488f-a5b5-89ffb31ebbb3', protocol='range'}
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:31:29 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-2-8736c5a1-b80b-488f-a5b5-89ffb31ebbb3 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-2, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:31:31 [Camel (camel-1) thread #7 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-2 unregistered
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s46ms (uptime:5s)
+2025-01-23 09:31:31 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:31 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testCustomThreadPoolConfiguration (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:31:31 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s75ms (5075 millis)
+2025-01-23 09:31:31 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testCustomThreadPoolConfiguration
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteErrorHandling
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:31:31 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:31:31 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:31:31 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:31:31 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:31:31 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:31:31 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 4ms (build:0ms init:0ms start:4ms)
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595891804
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:31:31 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:31 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-3
+2025-01-23 09:31:31 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:31:31 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:31:31 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-3-d0f390a0-0b28-45d0-a261-3da57e344eae
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:31:31 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=23, memberId='consumer-kafka-consumer-group-3-d0f390a0-0b28-45d0-a261-3da57e344eae', protocol='range'}
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Finished assignment for group at generation 23: {consumer-kafka-consumer-group-3-d0f390a0-0b28-45d0-a261-3da57e344eae=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=23, memberId='consumer-kafka-consumer-group-3-d0f390a0-0b28-45d0-a261-3da57e344eae', protocol='range'}
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:31:34 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-3-d0f390a0-0b28-45d0-a261-3da57e344eae sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-3, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:31:36 [Camel (camel-1) thread #11 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-3 unregistered
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s49ms (uptime:5s)
+2025-01-23 09:31:36 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:36 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testFileProcessingRouteErrorHandling (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:31:36 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s69ms (5069 millis)
+2025-01-23 09:31:36 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteErrorHandling
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testEmptyFileValidation
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:31:36 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:31:36 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:31:36 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:31:36 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:31:36 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:31:36 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 2ms (build:0ms init:0ms start:2ms)
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595896905
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:31:36 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:31:36 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-4
+2025-01-23 09:31:36 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:31:36 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:31:36 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-4-580d5aa1-2cac-4d54-8a47-5384c5264e3f
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:31:36 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=25, memberId='consumer-kafka-consumer-group-4-580d5aa1-2cac-4d54-8a47-5384c5264e3f', protocol='range'}
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Finished assignment for group at generation 25: {consumer-kafka-consumer-group-4-580d5aa1-2cac-4d54-8a47-5384c5264e3f=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=25, memberId='consumer-kafka-consumer-group-4-580d5aa1-2cac-4d54-8a47-5384c5264e3f', protocol='range'}
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:31:39 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-4-580d5aa1-2cac-4d54-8a47-5384c5264e3f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-4, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:31:41 [Camel (camel-1) thread #14 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-4 unregistered
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s55ms (uptime:5s)
+2025-01-23 09:31:41 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:41 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testEmptyFileValidation (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:31:41 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s67ms (5067 millis)
+2025-01-23 09:31:41 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testEmptyFileValidation
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener preparing: class com.camel.routing.FileProcessingRouteTest
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Disabling Camel JMX globally for tests by default. Use the DisableJMX annotation to override the default setting.
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener before: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteSuccess
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - Initialized CamelSpringBootExecutionListener now ready to start CamelContext
+2025-01-23 09:31:41 [main] INFO  o.a.c.t.s.j.CamelAnnotationsHandler - Starting CamelContext with name [camelContext].
+2025-01-23 09:31:41 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Defaulting to MemoryAggregationRepository
+2025-01-23 09:31:41 [main] INFO  o.a.c.p.aggregate.AggregateProcessor - Using CompletionTimeout to trigger after 5000 millis of inactivity.
+2025-01-23 09:31:41 [main] WARN  o.a.c.i.engine.AbstractCamelContext - Starting CamelContext: camel-1 after the context has been stopped is not recommended
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is starting
+2025-01-23 09:31:41 [main] INFO  o.a.c.s.b.CamelSpringBootApplicationListener - Starting CamelMainRunController to ensure the main thread keeps running
+2025-01-23 09:31:41 [main] INFO  o.a.c.component.kafka.KafkaConsumer - Starting Kafka consumer on topic: my-kafka-topic with breakOnFirstError: false
+2025-01-23 09:31:41 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Connecting Kafka consumer thread ID my-kafka-topic-Thread 0 with poll timeout of 5000 ms
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (started:3)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:41 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) started in 2ms (build:0ms init:0ms start:2ms)
+2025-01-23 09:31:41 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-consumer-group-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.0
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 60e845626d8a465a
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737595902000
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.k.c.s.c.AssignmentAdapterHelper - Using NO-OP resume strategy
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Subscribing my-kafka-topic-Thread 0 to topic my-kafka-topic
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Subscribed to topic(s): my-kafka-topic
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Cluster ID: nrlM0-SxSpKWlblswmpumA
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:42 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) is shutting down (timeout:10s)
+2025-01-23 09:31:42 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Pausing Kafka record fetcher task running client ID consumer-kafka-consumer-group-5
+2025-01-23 09:31:42 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - A pause request was issued and the consumer thread will pause after current processing has finished
+2025-01-23 09:31:42 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer - Stopping Kafka consumer on topic: my-kafka-topic
+2025-01-23 09:31:42 [Camel (camel-1) thread #8 - ShutdownTask] INFO  o.a.c.c.kafka.KafkaFetchRecords - Waiting up to 30000 milliseconds for the processing to finish
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-kafka-consumer-group-5-882fd601-2491-4d5e-b22c-686230239686
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-23 09:31:42 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] (Re-)joining group
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Successfully joined group with generation Generation{generationId=27, memberId='consumer-kafka-consumer-group-5-882fd601-2491-4d5e-b22c-686230239686', protocol='range'}
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Finished assignment for group at generation 27: {consumer-kafka-consumer-group-5-882fd601-2491-4d5e-b22c-686230239686=Assignment(partitions=[my-kafka-topic-0])}
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Successfully synced group in generation Generation{generationId=27, memberId='consumer-kafka-consumer-group-5-882fd601-2491-4d5e-b22c-686230239686', protocol='range'}
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Notifying assignor about the new Assignment(partitions=[my-kafka-topic-0])
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Adding newly assigned partitions: my-kafka-topic-0
+2025-01-23 09:31:45 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Setting offset for partition my-kafka-topic-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Pausing the consumer as a response to a pause request
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Revoke previously assigned partitions my-kafka-topic-0
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] The pause flag in partitions [my-kafka-topic-0] will be removed due to revocation.
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Member consumer-kafka-consumer-group-5-882fd601-2491-4d5e-b22c-686230239686 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.c.c.kafka.KafkaFetchRecords - Terminating KafkaConsumer thread my-kafka-topic-Thread 0 receiving from topic my-kafka-topic
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-kafka-consumer-group-5, groupId=kafka-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-01-23 09:31:47 [Camel (camel-1) thread #17 - KafkaConsumer[my-kafka-topic]] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-consumer-group-5 unregistered
+2025-01-23 09:31:47 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (stopped:3)
+2025-01-23 09:31:47 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped ProcessKafkaMessageRoute (direct://ProcessKafkaMessage)
+2025-01-23 09:31:47 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped KafkaConsumerRoute (kafka://my-kafka-topic)
+2025-01-23 09:31:47 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped FileProcessingRoute (file://src/test/resources/input)
+2025-01-23 09:31:47 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.3.0 (camel-1) shutdown in 5s40ms (uptime:5s)
+2025-01-23 09:31:47 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:47 [main] INFO  c.c.routing.FileProcessingRouteTest - Testing done: testFileProcessingRouteSuccess (com.camel.routing.FileProcessingRouteTest)
+2025-01-23 09:31:47 [main] INFO  c.c.routing.FileProcessingRouteTest - Took: 5s58ms (5058 millis)
+2025-01-23 09:31:47 [main] INFO  c.c.routing.FileProcessingRouteTest - ********************************************************************************
+2025-01-23 09:31:47 [main] INFO  o.a.c.t.s.j.CamelSpringBootExecutionListener - CamelSpringBootExecutionListener after: class com.camel.routing.FileProcessingRouteTest.testFileProcessingRouteSuccess
+2025-01-23 09:31:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 09:31:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-23 09:31:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
