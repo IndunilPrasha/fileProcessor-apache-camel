@@ -55,22 +55,28 @@ public class DatabaseHandler extends RouteBuilder{
         log.info("Input validated for file: " + fileName);
 
     }
-    private void persistDataToDatabase(Exchange exchange) {
+    public void persistDataToDatabase(Exchange exchange) {
 
         List<List<String>> batch = exchange.getIn().getBody(List.class);
 
         String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
-//        String data = exchange.getIn().getBody(String.class);
+        String data = exchange.getIn().getBody(String.class);
 
         String sql = "INSERT INTO CSV_DATE (FILE_NAME, RECORD_DATA, PROCESSED_DATE) VALUES (?, ?, CURRENT_TIMESTAMP)";
-        for (List<String> row : batch) {
-            try {
-                String recordData = String.join(",", row);
-                jdbcTemplate.update(sql, fileName, recordData);
-            } catch (Exception e) {
-                log.error("Error persisting row: {} - {}", row, e.getMessage());
+        if (!fileName.equals("kafka-message")){
+            for (List<String> row : batch) {
+                try {
+                    String recordData = String.join(",", row);
+                    jdbcTemplate.update(sql, fileName, recordData);
+                } catch (Exception e) {
+                    log.error("Error persisting row: {} - {}", row, e.getMessage());
+                }
             }
+        } else {
+//            String recordData = String.join(",", row);
+            jdbcTemplate.update(sql, fileName, data);
         }
+
 
         log.info("Data successfully persisted for file: " + fileName);
     }

@@ -4,6 +4,9 @@ import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Component
 public class ProcessKafkaMessageRoute extends RouteBuilder {
 
@@ -13,6 +16,7 @@ public class ProcessKafkaMessageRoute extends RouteBuilder {
         from("direct:ProcessKafkaMessage")
                 .routeId("ProcessKafkaMessageRoute")
                 .process(this::prepareDatabaseRecord)
+//                .process(this::convertMessageToList)
                 .to("direct:DatabaseHandler")
                 .log("Kafka message persisted to database: ${body}");
     }
@@ -24,4 +28,10 @@ public class ProcessKafkaMessageRoute extends RouteBuilder {
         exchange.getIn().setHeader("CamelFileName", kafkaKey != null ? kafkaKey : "kafka-message");
         exchange.getIn().setBody(kafkaMessage);
     }
+
+//    private void convertMessageToList(Exchange exchange) {
+//        String message = exchange.getIn().getBody(String.class);
+//        List<String> messageList = Arrays.asList(message.split(","));
+//        exchange.getIn().setBody(messageList);
+//    }
 }

@@ -20,6 +20,13 @@
 		<spring-boot.version>3.2.0</spring-boot.version>
 		<camel.version>4.3.0</camel.version>
 	</properties>
+	<dependencies>
+	<dependency>
+		<groupId>org.apache.camel.springboot</groupId>
+		<artifactId>camel-spring-boot-starter</artifactId>
+		<version>4.3.0</version>
+	</dependency>
+	</dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

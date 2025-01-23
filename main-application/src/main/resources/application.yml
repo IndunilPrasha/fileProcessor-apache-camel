@@ -39,7 +39,7 @@ batch:
 
 parallel:
   threads: 10
-  max-threads: 20
+  maxThreads: 20
 
 
 logging:
@@ -75,7 +75,7 @@ camel:
 kafka:
   bootstrap:
     servers: localhost:9092
-  topic: kafka_data_topic
+  topic: my-kafka-topic
   group-id: kafka-consumer-group
   auto:
     offset:

@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutorService;
 public class FileProcessingRoute extends RouteBuilder {
 
     @Value("${csv.input.directory}")
-    private String inputDirectory;
+    String inputDirectory;
 
     @Value("${csv.processed.directory}")
     private String processedDirectory;
@@ -28,6 +28,9 @@ public class FileProcessingRoute extends RouteBuilder {
 
     @Value("${parallel.threads}")
     private int parallelThreads;
+
+    @Value("${parallel.maxThreads}")
+    private int maxThreads;
 
     private final DatabaseHandler databaseHandler;
     private final GlobalExceptionHandler globalExceptionHandler;
@@ -97,6 +100,6 @@ public class FileProcessingRoute extends RouteBuilder {
     private java.util.concurrent.ExecutorService customThreadPool() {
         return getContext().getExecutorServiceManager().newThreadPool(
                 this, "CustomThreadPoolProfile",
-                parallelThreads,parallelThreads * 2);
+                parallelThreads,maxThreads);
     }
 }
