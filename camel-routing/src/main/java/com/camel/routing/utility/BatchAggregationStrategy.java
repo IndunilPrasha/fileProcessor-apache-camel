@@ -1,4 +1,4 @@
-package com.camel.routing;
+package com.camel.routing.utility;
 
 import org.apache.camel.AggregationStrategy;
 import org.apache.camel.Exchange;

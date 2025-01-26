@@ -1,11 +1,8 @@
-package com.camel.routing;
+package com.camel.routing.service;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
-import java.util.List;
 
 @Component
 public class ProcessKafkaMessageRoute extends RouteBuilder {
@@ -21,7 +18,7 @@ public class ProcessKafkaMessageRoute extends RouteBuilder {
                 .log("Kafka message persisted to database: ${body}");
     }
 
-    private void prepareDatabaseRecord(Exchange exchange) {
+    public void prepareDatabaseRecord(Exchange exchange) {
         String kafkaMessage = exchange.getIn().getBody(String.class);
         String kafkaKey = exchange.getIn().getHeader("kafka.KEY",String.class);
 

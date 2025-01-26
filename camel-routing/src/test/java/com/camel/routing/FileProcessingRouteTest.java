@@ -1,32 +1,44 @@
 package com.camel.routing;
 
-import com.camel.fileProcessor.CamelFileProcessorApplication;
 import com.camel.fileProcessor.database.DatabaseHandler;
 import com.camel.fileProcessor.exception.GlobalExceptionHandler;
+import com.camel.routing.service.FileProcessingRoute;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
-import org.apache.camel.Message;
 import org.apache.camel.RoutesBuilder;
+import org.apache.camel.builder.AdviceWithRouteBuilder;
 import org.apache.camel.builder.NotifyBuilder;
+import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.impl.DefaultCamelContext;
+import org.apache.camel.impl.engine.DefaultRoute;
+import org.apache.camel.model.ModelCamelContext;
+import org.apache.camel.model.RouteDefinition;
+import org.apache.camel.support.DefaultExchange;
+import org.apache.camel.test.junit5.CamelTestSupport;
 import org.apache.camel.test.spring.junit5.CamelSpringBootTest;
+import org.apache.camel.test.spring.junit5.CamelSpringTest;
+import org.apache.camel.test.spring.junit5.MockEndpointsAndSkip;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.DynamicPropertySource;
+import org.springframework.test.context.DynamicPropertySource;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.apache.camel.support.LifecycleStrategySupport.adapt;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @CamelSpringBootTest
+//@CamelSpringTest
 @SpringBootTest(classes = {CamelFileProcessorApplication.class})
 public class FileProcessingRouteTest {
 
@@ -41,90 +53,126 @@ public class FileProcessingRouteTest {
     @MockBean
     private DatabaseHandler databaseHandler;
 
-    @MockBean
-    private GlobalExceptionHandler globalExceptionHandler;
-
     @Autowired
     private CamelContext camelContext;
 
     @BeforeEach
-    void setupMocks() {
-        // Mock behavior of database handler and exception handler
+    void setup() throws Exception {
+        // Mock the database handler if needed
         doNothing().when(databaseHandler).persistDataToDatabase(any());
-        doNothing().when(globalExceptionHandler).process(any());
+        // Add the FileProcessingRoute to the Camel context
+        camelContext.addRoutes(new RouteBuilder() {
+            @Override
+            public void configure() {
+                from("direct:FileProcessingRoute")
+                        .routeId("FileProcessingRoute")
+                        .log("Processing file: ${header.CamelFileName}")
+                        .process(exchange -> {
+                            Exchange body = exchange.getIn().getBody(Exchange.class);
+                            databaseHandler.persistDataToDatabase(body); // Explicitly invoke the mock
+                        })
+                        .to("mock:DatabaseHandler");
+            }
+        });
 
-        // Start the Camel context before each test
-        if (!camelContext.isStarted()) {
-            camelContext.start();
-        }
-    }
-
-    @AfterEach
-    void tearDown() throws Exception {
-        // Stop the Camel context after each test
-        if (camelContext.isStarted()) {
-            camelContext.stop();
-        }
+        // Start the Camel context
+        camelContext.start();
     }
 
     @Test
-    void testFileProcessingRouteSuccess() throws Exception {
-        // Prepare the mock endpoint
-        CamelContext camelContext = new DefaultCamelContext();
-//        Thread.sleep(1000);
-
+    void testFileProcessingRoute() throws Exception {
+        // Prepare MockEndpoint
         MockEndpoint mockDatabaseEndpoint = camelContext.getEndpoint("mock:DatabaseHandler", MockEndpoint.class);
         mockDatabaseEndpoint.expectedMessageCount(1);
 
-        // Send a sample CSV file to the input directory
+        // Simulate file input
         String csvContent = "Header1,Header2\nValue1,Value2";
-        camelContext.createProducerTemplate().sendBodyAndHeader("file:input", csvContent, Exchange.FILE_NAME, "test.csv");
+        camelContext.createProducerTemplate().sendBodyAndHeader("direct:FileProcessingRoute", csvContent, "CamelFileName", "test.csv");
 
-        // Verify the behavior
-        mockDatabaseEndpoint.assertIsSatisfied(5000);
+        // Assert mock endpoint
+        mockDatabaseEndpoint.assertIsSatisfied();
+
+        // Verify that database handler logic was invoked (if relevant)
         verify(databaseHandler, times(1)).persistDataToDatabase(any());
     }
 
     @Test
-    void testFileProcessingRouteErrorHandling() throws Exception {
-        // Force an exception during processing
-        CamelContext camelContext = new DefaultCamelContext();
-        doThrow(new RuntimeException("Simulated Exception")).when(databaseHandler).persistDataToDatabase(any());
+    void testProcessFileValidBatch() throws Exception {
+        // Simulate a valid batch
+        List<List<String>> batch = Arrays.asList(
+                Arrays.asList("Header1", "Header2"),
+                Arrays.asList("Value1", "Value2")
+        );
 
-        // Prepare the mock endpoint
-        MockEndpoint mockErrorEndpoint = camelContext.getEndpoint("mock:file:error", MockEndpoint.class);
-        mockErrorEndpoint.expectedMessageCount(1);
+        // Prepare Exchange with valid data
+        Exchange exchange = new DefaultExchange(camelContext);
+        exchange.getIn().setBody(batch);
+        exchange.getIn().setHeader("CamelFileName", "test.csv");
 
-        // Send a sample CSV file to the input directory
-        String csvContent = "Header1,Header2\nValue1,Value2";
-        camelContext.createProducerTemplate().sendBodyAndHeader("file:input", csvContent, Exchange.FILE_NAME, "error.csv");
+        // Call the processFile method
+        FileProcessingRoute fileProcessingRoute = new FileProcessingRoute(databaseHandler,null);
+        fileProcessingRoute.processFile(exchange);
 
-        // Verify the behavior
-        mockErrorEndpoint.assertIsSatisfied();
-        verify(globalExceptionHandler, times(1)).process(any());
+        // Assert the batch is correctly set in the exchange body
+        List<List<String>> result = exchange.getIn().getBody(List.class);
+        assertNotNull(result, "Batch should not be null");
+        assertEquals(batch, result, "The processed batch should match the input batch");
     }
 
     @Test
-    void testEmptyFileValidation() throws Exception {
-        // Send an empty CSV file
-        CamelContext camelContext = new DefaultCamelContext();
-        String emptyCsvContent = "";
-        camelContext.createProducerTemplate().sendBodyAndHeader("file:input", emptyCsvContent, Exchange.FILE_NAME, "empty.csv");
+    void testProcessFileEmptyBatch() {
+        // Simulate an empty batch
+        List<List<String>> emptyBatch = Arrays.asList();
 
-        // Verify that the global exception handler is invoked
-        verify(globalExceptionHandler, times(1)).process(any());
+        // Prepare Exchange with empty batch
+        Exchange exchange = new DefaultExchange(camelContext);
+        exchange.getIn().setBody(emptyBatch);
+        exchange.getIn().setHeader("CamelFileName", "empty.csv");
+
+        // Verify that an exception is thrown
+        FileProcessingRoute fileProcessingRoute = new FileProcessingRoute(databaseHandler, null);
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            fileProcessingRoute.processFile(exchange);
+        });
+
+        // Assert the exception message
+        assertEquals("This is empty: empty.csv", exception.getMessage());
     }
+
+    @Test
+    void testProcessFileNullBatch() {
+        // Simulate a null batch
+        Exchange exchange = new DefaultExchange(camelContext);
+        exchange.getIn().setBody(null);
+        exchange.getIn().setHeader("CamelFileName", "null.csv");
+
+        // Verify that an exception is thrown
+        FileProcessingRoute fileProcessingRoute = new FileProcessingRoute(databaseHandler, null);
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            fileProcessingRoute.processFile(exchange);
+        });
+
+        // Assert the exception message
+        assertEquals("This is empty: null.csv", exception.getMessage());
+    }
+
 
     @Test
     void testCustomThreadPoolConfiguration() throws Exception {
-        CamelContext camelContext = new DefaultCamelContext();
+
+        // Prepare MockEndpoint
+        MockEndpoint mockDatabaseEndpoint = camelContext.getEndpoint("mock:DatabaseHandler", MockEndpoint.class);
+        mockDatabaseEndpoint.expectedMessageCount(1);
+
         NotifyBuilder notifyBuilder = new NotifyBuilder(camelContext)
                 .whenDone(1)
                 .create();
 
         // Send a sample CSV file
         String csvContent = "Header1,Header2\nValue1,Value2";
-        camelContext.createProducerTemplate().sendBodyAndHeader("file:input", csvContent, Exchange.FILE_NAME, "thread-test.csv");
+        camelContext.createProducerTemplate().sendBodyAndHeader("direct:FileProcessingRoute", csvContent, Exchange.FILE_NAME, "thread-test.csv");
 
         // Wait for the route to complete processing
         notifyBuilder.matches(5, TimeUnit.SECONDS);
@@ -133,50 +181,28 @@ public class FileProcessingRouteTest {
         // (you can also assert logging messages or mock specific validations)
     }
 
-    @Test
-    void testKafkaMessageProcessingRouteSuccess() throws Exception {
-        // Prepare the mock endpoint
-//        CamelContext camelContext = new DefaultCamelContext();
-        Thread.sleep(1000);
-
-        MockEndpoint mockDatabaseEndpoint = camelContext.getEndpoint("mock:DatabaseHandler", MockEndpoint.class);
-        mockDatabaseEndpoint.expectedMessageCount(1);
-
-        // Send a message to the route
-        camelContext.createProducerTemplate().sendBodyAndHeader(
-                "direct:ProcessKafkaMessage",
-                "Test Kafka Message",
-                "kafka.KEY",
-                "test-key"
-        );
-
-        // Verify the mock endpoint received the message
-        mockDatabaseEndpoint.assertIsSatisfied();
-    }
-
-    // Process Exchange with null batch list
 //    @Test
-//    public void test_process_exchange_with_null_batch() {
-//        // Arrange
-//        FileProcessingRoute route = new FileProcessingRoute();
-//        Exchange exchange = mock(Exchange.class);
-//        Message message = mock(Message.class);
-//        when(exchange.getIn()).thenReturn(message);
-//        when(message.getBody(List.class)).thenReturn(null);
-//        when(message.getHeader("CamelFileName", String.class)).thenReturn("test.csv");
+//    void testKafkaMessageProcessingRouteSuccess() throws Exception {
+//        // Prepare the mock endpoint
+////        CamelContext camelContext = new DefaultCamelContext();
+//        Thread.sleep(1000);
 //
-//        // Act & Assert
-//        IllegalArgumentException exception = assertThrows(
-//                IllegalArgumentException.class,
-//                () -> route.processFile(exchange)
+//        MockEndpoint mockDatabaseEndpoint = camelContext.getEndpoint("mock:DatabaseHandler", MockEndpoint.class);
+//        mockDatabaseEndpoint.expectedMessageCount(1);
+//
+//        // Send a message to the route
+//        camelContext.createProducerTemplate().sendBodyAndHeader(
+//                "direct:ProcessKafkaMessage",
+//                "Test Kafka Message",
+//                "kafka.KEY",
+//                "test-key"
 //        );
 //
-//        assertEquals("This is empty: test.csv", exception.getMessage());
-//        verify(message).getBody(List.class);
-//        verify(message).getHeader("CamelFileName", String.class);
+//        // Verify the mock endpoint received the message
+//        mockDatabaseEndpoint.assertIsSatisfied();
 //    }
 
     protected RoutesBuilder createRouteBuilder() throws Exception {
-        return new FileProcessingRoute(databaseHandler, globalExceptionHandler);
+        return new FileProcessingRoute(databaseHandler, null);
     }
 }

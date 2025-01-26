@@ -1,9 +1,11 @@
-package com.camel.routing;
+package com.camel.routing.utility;
 
+import com.camel.routing.utility.BatchAggregationStrategy;
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -32,6 +34,23 @@ public class BatchAggregationStrategyTest {
             List<List<String>> batchList = (List<List<String>>) batch;
             return batchList.size() == 1 && batchList.get(0).equals(newRow);
         }));
+    }
+
+    // Handle null newExchange parameter
+    @Test
+    public void test_aggregate_handles_null_new_exchange() {
+        BatchAggregationStrategy strategy = new BatchAggregationStrategy();
+
+        Exchange oldExchange = mock(Exchange.class);
+        Message oldMessage = mock(Message.class);
+        List<List<String>> existingBatch = new ArrayList<>();
+
+        when(oldExchange.getIn()).thenReturn(oldMessage);
+        when(oldMessage.getBody(List.class)).thenReturn(existingBatch);
+
+        assertThrows(NullPointerException.class, () -> {
+            strategy.aggregate(oldExchange, null);
+        });
     }
 
 }

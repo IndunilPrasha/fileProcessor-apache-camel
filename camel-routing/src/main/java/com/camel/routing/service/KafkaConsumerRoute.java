@@ -1,4 +1,4 @@
-package com.camel.routing;
+package com.camel.routing.service;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.beans.factory.annotation.Value;

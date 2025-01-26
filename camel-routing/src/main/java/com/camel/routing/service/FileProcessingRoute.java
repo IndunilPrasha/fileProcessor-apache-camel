@@ -1,7 +1,8 @@
-package com.camel.routing;
+package com.camel.routing.service;
 
 import com.camel.fileProcessor.database.DatabaseHandler;
 import com.camel.fileProcessor.exception.GlobalExceptionHandler;
+import com.camel.routing.utility.BatchAggregationStrategy;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.CsvDataFormat;
@@ -9,7 +10,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.concurrent.ExecutorService;
 
 @Component
 public class FileProcessingRoute extends RouteBuilder {
@@ -74,6 +74,10 @@ public class FileProcessingRoute extends RouteBuilder {
 
 
     public void processFile(Exchange exchange) throws Exception {
+        Object body = exchange.getIn().getBody();
+        if (body == null) {
+            throw new IllegalArgumentException("This is empty: " + exchange.getIn().getHeader("CamelFileName", String.class));
+        }
         List<List<String>> batch = exchange.getIn().getBody(List.class);
         String fileName = exchange.getIn().getHeader("CamelFileName", String.class);
 
