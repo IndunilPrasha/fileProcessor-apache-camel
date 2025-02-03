@@ -41,6 +41,7 @@ build/
 bin/
 node_modules/
 .DS_Store
+data/
 
 #Exclude all .txt file and .csv files except important.txt
 *.txt
