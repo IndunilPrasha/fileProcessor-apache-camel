@@ -33,3 +33,16 @@ build/
 .vscode/
 
 .qodo
+
+#ignore all .log files
+*.log
+
+#Ignore a directory bin
+bin/
+node_modules/
+.DS_Store
+
+#Exclude all .txt file and .csv files except important.txt
+*.txt
+*.csv
+!important.txt
